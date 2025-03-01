@@ -32,15 +32,14 @@
 
 		<br>
 
-		Link to webpage: (TODO) <a href="https://cs184.eecs.berkeley.edu/sp25">cs184.eecs.berkeley.edu/sp25</a>
+		Link to webpage: (TODO) <a href="https://cal-cs184-student.github.io/hw-webpages-hello/">https://cal-cs184-student.github.io/hw-webpages-hello/</a>
 
 		<br>
 		
-		Link to GitHub repository: (TODO) <a href="https://cs184.eecs.berkeley.edu/sp25">cs184.eecs.berkeley.edu/sp25</a>
+		Link to GitHub repository: (TODO) <a href="https://github.com/cal-cs184-student/sp25-hw2-bleepblorp2">https://github.com/cal-cs184-student/sp25-hw2-bleepblorp2</a>
 
 		<figure>
 			<img src="images/teapot.png" alt="Teapot" style="width:50%"/>
-			<figcaption>You can add images with captions!</figcaption>
 		</figure>
 
 		<!--
@@ -48,8 +47,15 @@
 		-->
 
 		<h2>Overview</h2>
-		Give a high-level overview of what you implemented in this homework. Think about what you've built as a whole. Share your thoughts on what interesting things you've learned from completing the homework.
-
+		For this project, I implemented a variety of algorithms such as Bezier curves and surfaces, area-weighted vertex normals, edge flipping, edge splitting, and loop subdivision.
+		<br><br>
+		With all of these algorithms, one could easily create and render complex shapes. Utilizing Bezier surfaces, we can create curved surfaces out of polygons.
+		With area-weighted vertex normals, we can create smooth shading across a mesh. Edge flipping and splitting can be used alongside loop subdivision to improve the quality of a mesh.
+		<br><br>
+		I've learned that using half-edge data structures to represent meshes is extremely helpful, but the process of implementing some of these algorithms with it can be quite grueling.
+		I also learned that while loop subdivision can be a powerful tool for upsampling a mesh, it can also be quite destructive to the original mesh. In many examples shown throughout this write-up,
+		loop subdivision can prevent sharp edges from being preserved, cause a loss of volume in the mesh, and create unusual shapes when there are very few faces to begin with.
+		<br><br>
 		<h2>Section I: Bezier Curves and Surfaces</h2>
 
 		<h3>Part 1: Bezier curves with 1D de Casteljau subdivision</h3>
